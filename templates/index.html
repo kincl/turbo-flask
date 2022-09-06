@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    {{ turbo() }}
+  </head>
+  <body>
+    Hello from turbo-flask
+
+    <br/>
+    <turbo-frame id="messages" data-turbo-action="advance">
+      <a href="/messages">
+        Show all expanded messages in this frame.
+      </a>
+    </turbo-frame>
+    <br/>
+
+    {% include "loadavg.html" %}
+  </body>
+</html>
